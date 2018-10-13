@@ -10,14 +10,63 @@
         android:id="@+id/flashcard_question"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:background="@drawable/card_background"
+        android:elevation="5dp"
+        android:padding="20sp"
         android:text="Who is the creator of Super Mario Bros?"
+        android:textAlignment="center"
+        android:textColor="#000"
         android:textSize="40sp" />
-
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="200sp"
-        android:id="@+id/flashcard_answer"
+        android:layout_height="100dp"
+        android:id="@+id/answer_1"
+        android:textAlignment="center"
+        android:layout_below="@+id/flashcard_question"
+        android:background="@color/peach"
         android:textSize="40sp"
+        android:padding="20sp"
+        android:textColor="#000"
+        android:text="Shigeru Miyamoto"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/answer_2"
+        android:padding="20sp"
+        android:background="@color/peach"
+        android:textAlignment="center"
+        android:layout_below="@+id/answer_1"
+        android:textSize="40sp"
+        android:textColor="#000"
+        android:text="Satoshi Tajiri"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/answer_3"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:background="@color/peach"
+        android:padding="20sp"
+        android:layout_below="@+id/answer_2"
+        android:textSize="40sp"
+        android:text="Naoto Ohshima"/>
+    <TextView
+        android:id="@+id/flashcard_answer"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+
+        android:padding="20sp"
+        android:textColor="#000"
         android:text="Shigeru Miyamoto"
-        android:visibility="invisible"/>
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/answer_3"
+        android:id="@+id/toggle_choices_visibility"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_visibility_black_24dp" />
 </RelativeLayout>
